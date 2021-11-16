@@ -10,4 +10,4 @@ using LoopTest;
 
 //SimpleForLoop.SimpleFizzBang(1, 100);
 //AnotherFizzBang.FizzBangUsingArrays(1, 100);
-AnotherFizzBang.FizzBangRecursion(1, 100);
+AnotherFizzBuzz.FizzBuzzRecursion(1, 100);

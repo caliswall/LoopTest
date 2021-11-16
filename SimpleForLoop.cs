@@ -17,7 +17,7 @@ namespace LoopTest
                 }
                 if(i % 5 == 0)
                 {
-                    returnString += "Bang";
+                    returnString += "Buzz";
                 }
 
                 if(String.IsNullOrEmpty(returnString)) {

@@ -12,9 +12,9 @@ namespace LoopTest.utils
             return MultipleNumberHelper.isMultipleOf(i, 3) ? "Fizz" : "";
         }
 
-        internal static String getBang(int i)
+        internal static String getBuzz(int i)
         {
-            return MultipleNumberHelper.isMultipleOf(i, 5) ? "Bang" : "";
+            return MultipleNumberHelper.isMultipleOf(i, 5) ? "Buzz" : "";
         }
     }
 }

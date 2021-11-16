@@ -6,30 +6,30 @@ using LoopTest.utils;
 
 namespace LoopTest
 {
-    public class AnotherFizzBang
+    public class AnotherFizzBuzz
     {
-        internal static void FizzBangUsingArrays(int startNumber, int endNumber)
+        internal static void FizzBuzzUsingArrays(int startNumber, int endNumber)
         {
             int[] rangeArray = Enumerable.Range(startNumber, endNumber).ToArray();
             foreach (int i in rangeArray)
             {
                 var returnString = StringHelper.getFizz(i);
-                returnString += StringHelper.getBang(i);
+                returnString += StringHelper.getBuzz(i);
 
                 Console.WriteLine(String.IsNullOrEmpty(returnString) ? i : returnString);
 
             }
         }
 
-        internal static void FizzBangRecursion(int startNumber, int endNumber)
+        internal static void FizzBuzzRecursion(int startNumber, int endNumber)
         {
             if (startNumber <= endNumber)
             {
                 var returnString = StringHelper.getFizz(startNumber);
-                returnString += StringHelper.getBang(startNumber);
+                returnString += StringHelper.getBuzz(startNumber);
 
                 Console.WriteLine(String.IsNullOrEmpty(returnString) ? startNumber : returnString);
-                FizzBangRecursion(startNumber + 1, endNumber);
+                FizzBuzzRecursion(startNumber + 1, endNumber);
             }
         }
 
